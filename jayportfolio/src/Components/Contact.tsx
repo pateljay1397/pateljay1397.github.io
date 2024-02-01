@@ -27,7 +27,6 @@ const Contact = () => {
 
       if (response.ok) {
         alert("Message sent successfully!");
-        // Optionally, reset form fields
         setName("");
         setEmail("");
         setMessage("");
@@ -50,17 +49,14 @@ const Contact = () => {
             title="map"
             className="absolute inset-0"
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=34+Roadmaster+Lane,+Brampton,+ON,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed/v1/place?q=Brampton,+ON,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
-                34 Roadmaster Lane <br />
-                Brampton, ON, L7A 3A7 Canada
-              </p>
+              <p className="mt-1">Brampton, ON, L7A 3A7 Canada</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
